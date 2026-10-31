@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Privacy Policy — BUPT Calendar Sync</title>
+  <style>
+    body{font:16px/1.6 system-ui,sans-serif;color:#172a40;background:#f4f7fb;margin:0}
+    main{max-width:48rem;margin:3rem auto;padding:2rem;background:#fff;border-radius:.8rem}
+    h1,h2{line-height:1.25}h1{font-size:2rem}h2{margin-top:2rem;font-size:1.2rem}
+    a{color:#0755a0}footer{margin-top:2rem;border-top:1px solid #d6e0eb;padding-top:1rem}
+    @media(max-width:52rem){main{margin:1rem;padding:1.25rem}}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p>BUPT Calendar Sync · Last updated: October 31, 2026</p>
+  <h2>Purpose and data processed</h2>
+  <p>BUPT Calendar Sync is a personal automation for copying timetable and homework information from the owner's BUPT services into Google Calendar and Google Tasks. It processes school account credentials and session data to access the school services; course names, times and locations; homework titles, due dates, descriptions and attachment names; and Google Calendar and Tasks data needed to locate and update synchronized items.</p>
+  <p>The requested Google Calendar and Google Tasks permissions can grant access beyond the calendars and task list currently targeted by the sync. The application reads calendar and task-list metadata, reads existing target events and tasks, and creates or updates synchronized events and tasks. The regular sync is designed not to delete items that disappear from the school source or reset a task's completion state.</p>
+  <h2>Storage and service providers</h2>
+  <p>The owner configures school and Google OAuth credentials as GitHub Actions repository secrets. GitHub Actions runs the synchronization and temporarily processes the school and Google data needed for each run. Google stores the events and tasks created in the owner's Google account. Separate course and homework export workflows, triggered manually or by changes to their workflow files, can store course and homework details, and accessible attachments, in private GitHub Actions artifacts configured for three days of retention. GitHub Actions log retention is governed by the repository's GitHub settings.</p>
+  <p>If the optional third-party OCR service is configured to solve a school login CAPTCHA, that service receives the CAPTCHA URL and temporary cookie needed to retrieve the image. Otherwise that optional service is not used.</p>
+  <p>Google and GitHub process data as providers of their respective services. The application is a personal project; it does not sell Google user data or use it for advertising. Its use and transfer of Google user data will comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+  <h2>Retention, removal and revocation</h2>
+  <p>The owner's Google account retains synchronized events and tasks until the owner removes them or changes their account settings. Credentials remain in GitHub Actions repository secrets until removed or replaced. The owner can revoke the application's Google access through <a href="https://myaccount.google.com/permissions">Google Account connections</a> and disable the GitHub Actions workflow. Revoking access stops future authorized access but does not automatically delete previously synchronized events or tasks.</p>
+  <footer><a href="index.html">Home</a> · Contact: <a href="mailto:shanec0078@gmail.com">shanec0078@gmail.com</a></footer>
+</main>
+</body>
+</html>
+
